@@ -76,6 +76,7 @@ nav:
         - Haskell (haskell): sections/haskell.md
         - Java (java): sections/java.md
         - Julia (julia): sections/julia.md
+        - Crystal (crystal): sections/crystal.md
         - Docker (docker): sections/docker.md
         - Amazon Web Services (aws): sections/aws.md
         - Google Cloud Platform (gcloud): sections/gcloud.md
@@ -130,6 +131,12 @@ extra:
     - name: English
       lang: en
       link: /en
+    - name: Deutsch
+      lang: de
+      link: /de
+    - name: Polski
+      lang: pl
+      link: /pl
     - name: Українська
       lang: uk
       link: /uk
@@ -165,6 +172,8 @@ plugins:
   - search:
       lang:
         - en
+        - de
+        - pl
         - uk
         - zh
   - redirects:
@@ -179,7 +188,35 @@ plugins:
       languages:
         en:
           name: English
+        de:
+          name: Deutsch
+        pl:
+          name: Polska
         uk:
           name: Українська
         zh:
           name: 简体中文
+      nav_translations:
+        de: # TODO: Add German translations
+        pl: # TODO: Add Polish translations
+        uk:
+          Home: Головна
+          Getting Started: Початок роботи
+          Configuration: Конфігурація
+          Introduction: Вступ
+          Prompt configuration: Налаштування командного рядка
+          Loading custom sections: Завантаження власних секцій
+          Built-in Sections: Вбудовані секції
+          Advanced: Розширені можливості
+          Creating a custom section: Створення власної секції
+          Per-directory configuration: Налаштування для кожної директорії
+          API: API
+          Environment: Середовище
+          Sections: Секції
+          General utilities: Загальні утиліти
+          Testing kit: Інструменти тестування
+          Registry: Реєстр
+          FAQ: ЧАПИ
+          Blog: Блог
+          Contribute: Зробити внесок
+        zh: # TODO: Add Chinese translations

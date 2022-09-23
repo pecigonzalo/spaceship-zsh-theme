@@ -36,7 +36,7 @@ fi
 
 if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
   SPACESHIP_PROMPT_ORDER=(
-    time          # Time stampts section
+    time          # Time stamps section
     user          # Username section
     dir           # Current directory section
     host          # Hostname section
@@ -45,6 +45,7 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     package       # Package version
     node          # Node.js section
     bun           # Bun section
+    deno          # Deno section
     ruby          # Ruby section
     python        # Python section
     elm           # Elm section
@@ -57,6 +58,7 @@ if [ -z "$SPACESHIP_PROMPT_ORDER" ]; then
     haskell       # Haskell Stack section
     java          # Java section
     julia         # Julia section
+    crystal       # Crystal section
     docker        # Docker section
     aws           # Amazon Web Services section
     gcloud        # Google Cloud Platform section
@@ -100,6 +102,7 @@ SPACESHIP_PROMPT_DEFAULT_SUFFIX="${SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "}"
 SPACESHIP_LIBS=(
   "lib/utils.zsh"   # General porpuse utils
   "lib/cache.zsh"   # Cache utils
+  "lib/worker.zsh"  # Async worker
   "lib/hooks.zsh"   # Zsh hooks
   "lib/section.zsh" # Section utils
   "lib/core.zsh"    # Core functions for loading and rendering
